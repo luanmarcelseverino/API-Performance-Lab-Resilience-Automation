@@ -51,7 +51,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-history
           publish_branch: gh-pages
-          force_orphan: true
+          force_orphan: true # Cria a branch se ela não existir
 
   performance-tests:
     runs-on: ubuntu-latest
@@ -61,4 +61,3 @@ jobs:
         uses: grafana/setup-k6-action@v1
       - name: Execute k6
         run: k6 run tests/performance/load_test.js
-        
