@@ -1,3 +1,4 @@
+[![API & Performance Pipeline](https://github.com/luanmarcelseverino/API-Performance-Lab-Resilience-Automation/actions/workflows/main.yml/badge.svg)](https://github.com/luanmarcelseverino/API-Performance-Lab-Resilience-Automation/actions/workflows/main.yml)
 # API-Performance-Lab: Resilience & Automation
 
 Este projeto demonstra uma estratégia completa de testes para APIs de alta criticidade, unindo testes funcionais, validação de contrato e testes de performance (carga e estresse).
