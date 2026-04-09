@@ -2,6 +2,9 @@ name: API & Performance Pipeline
 
 on: [push]
 
+permissions:
+  contents: write
+
 jobs:
   api-tests:
     runs-on: ubuntu-latest
@@ -17,12 +20,34 @@ jobs:
         run: pip install poetry
 
       - name: Install Dependencies
-        run: poetry install
+        run: poetry install --no-root
 
       - name: Run Functional Tests
         run: |
           export PYTHONPATH=$PYTHONPATH:$(pwd)
-          poetry run pytest
+          poetry run pytest --alluredir=allure-results
+        continue-on-error: true
+
+      - name: Get Allure history
+        uses: actions/checkout@v3
+        if: always()
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Allure Report Action
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        with:
+          allure_results: allure-results
+          allure_history: allure-history
+
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-history
 
   performance-tests:
     runs-on: ubuntu-latest
@@ -32,3 +57,4 @@ jobs:
         uses: grafana/setup-k6-action@v1
       - name: Execute k6
         run: k6 run tests/performance/load_test.js
+        

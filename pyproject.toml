@@ -10,6 +10,7 @@ python = "^3.10"
 pytest = "^9.0.3"
 requests = "^2.33.1"
 jsonschema = "^4.26.0"
+allure-pytest = "^2.15.3"
 
 [build-system]
 requires = ["poetry-core"]
