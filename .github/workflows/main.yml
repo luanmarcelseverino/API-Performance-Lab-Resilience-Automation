@@ -61,3 +61,4 @@ jobs:
         uses: grafana/setup-k6-action@v1
       - name: Execute k6
         run: k6 run tests/performance/load_test.js
+        
