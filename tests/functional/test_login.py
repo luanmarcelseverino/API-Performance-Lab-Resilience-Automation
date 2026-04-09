@@ -7,3 +7,4 @@ def test_login_com_sucesso():
     assert response.status_code == 200
     assert response.json()["message"] == "Login realizado com sucesso"
     assert "authorization" in response.headers
+    
