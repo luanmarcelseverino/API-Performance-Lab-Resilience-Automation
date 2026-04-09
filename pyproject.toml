@@ -5,6 +5,7 @@ description = ""
 authors = [
     {name = "Luan"}
 ]
+package-mode = false
 requires-python = ">=3.10,<4.0"
 dependencies = [
     "pytest (>=9.0.3,<10.0.0)",
