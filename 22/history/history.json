@@ -1,0 +1,1 @@
+{"5eb94c55b315ebef8ea71987650ff28d":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"21fd551aafa4a81b","reportUrl":"https://luanmarcelseverino.github.io/API-Performance-Lab-Resilience-Automation/22/#testresult/21fd551aafa4a81b","status":"passed","time":{"start":1775779901561,"stop":1775779901746,"duration":185}}]}}
