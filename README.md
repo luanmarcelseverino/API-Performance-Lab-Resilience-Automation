@@ -3,6 +3,10 @@
 
 Este projeto demonstra uma estratégia completa de testes para APIs de alta criticidade, unindo testes funcionais, validação de contrato e testes de performance (carga e estresse).
 
+### 📊 Relatório de Testes (Allure Report)
+Você pode visualizar os resultados detalhados da última execução da pipeline aqui:
+👉 **[Visualizar Relatório Online](https://luanmarcelseverino.github.io/API-Performance-Lab-Resilience-Automation/)**
+
 ## 🛠 Tech Stack
 * **Linguagem:** Python
 * **Gestão de Dependências:** Poetry
