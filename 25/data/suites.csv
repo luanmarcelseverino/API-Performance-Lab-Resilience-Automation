@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","237","test_login_com_sucesso","tests.functional","Fri Apr 10 00:33:44 UTC 2026","passed","Fri Apr 10 00:33:45 UTC 2026","","test_login","",""
