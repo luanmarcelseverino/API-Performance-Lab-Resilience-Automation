@@ -1,7 +1,7 @@
 # API-Performance-Lab: Resilience & Automation
 
-![Pipeline Status](https://github.com/luanmarcelseverino/API-Performance-Lab-Resilience-Automation/actions/workflows/main.yml/badge.svg)
-![K6 Performance](https://github.com/luanmarcelseverino/API-Performance-Lab-Resilience-Automation/actions/workflows/main.yml/badge.svg?job=performance-tests)
+[![Pipeline Status](https://github.com/luanmarcelseverino/API-Performance-Lab-Resilience-Automation/actions/workflows/main.yml/badge.svg)](https://github.com/luanmarcelseverino/API-Performance-Lab-Resilience-Automation/actions)
+[![K6 Performance](https://github.com/luanmarcelseverino/API-Performance-Lab-Resilience-Automation/actions/workflows/main.yml/badge.svg?job=performance-tests)](https://github.com/luanmarcelseverino/API-Performance-Lab-Resilience-Automation/actions)
 
 Este projeto demonstra uma estratégia completa de testes para APIs de alta criticidade, unindo testes funcionais, validação de contrato e testes de performance (carga e estresse).
 
