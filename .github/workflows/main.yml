@@ -52,16 +52,13 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-history
           publish_branch: gh-pages
-          force_orphan: true # <--- ISSO CRIA A BRANCH NA MARRA
 
   performance-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-
       - name: Run k6 Load Test
         uses: grafana/setup-k6-action@v1
-
       - name: Execute k6
         run: k6 run tests/performance/load_test.js
