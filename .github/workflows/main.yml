@@ -52,7 +52,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-history
           publish_branch: gh-pages
-          force_orphan: true
+          force_orphan: true # <--- ISSO CRIA A BRANCH NA MARRA
 
   performance-tests:
     runs-on: ubuntu-latest
