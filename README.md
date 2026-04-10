@@ -1,5 +1,7 @@
-[![API & Performance Pipeline](https://github.com/luanmarcelseverino/API-Performance-Lab-Resilience-Automation/actions/workflows/main.yml/badge.svg)](https://github.com/luanmarcelseverino/API-Performance-Lab-Resilience-Automation/actions/workflows/main.yml)
-# API-Performance-Lab: Resilience & Automation
+# 🚀 API-Performance-Lab: Resilience & Automation
+
+![Pipeline Status](https://github.com/luanmarcelseverino/API-Performance-Lab-Resilience-Automation/actions/workflows/main.yml/badge.svg)
+![K6 Performance](https://github.com/luanmarcelseverino/API-Performance-Lab-Resilience-Automation/actions/workflows/main.yml/badge.svg?job=performance-tests)
 
 Este projeto demonstra uma estratégia completa de testes para APIs de alta criticidade, unindo testes funcionais, validação de contrato e testes de performance (carga e estresse).
 
@@ -7,14 +9,16 @@ Este projeto demonstra uma estratégia completa de testes para APIs de alta crit
 Você pode visualizar os resultados detalhados da última execução da pipeline aqui:
 👉 **[Visualizar Relatório Online](https://luanmarcelseverino.github.io/API-Performance-Lab-Resilience-Automation/)**
 
+---
+
 ## 🛠 Tech Stack
 * **Linguagem:** Python
 * **Gestão de Dependências:** Poetry
 * **Testes Funcionais:** Pytest & Requests
-* **Performance:** K6 
+* **Performance:** K6
 * **CI/CD:** GitHub Actions
 
-## 🌟 Diferenciais
+## ⭐ Diferenciais
 * **Service Layer:** Abstração de chamadas para alta manutenibilidade.
 * **Deterministic Environment:** Gestão rigorosa de dependências via Poetry.
 * **Performance Híbrida:** Scripts de carga progressiva (ramping) com K6.
@@ -25,4 +29,5 @@ Você pode visualizar os resultados detalhados da última execução da pipeline
 2. Rode os testes funcionais: `poetry run pytest`
 3. Rode o teste de carga: `k6 run tests/performance/load_test.js`
 
-Dúvidas ou sugestões? Conecte-se comigo no LinkedIn https://www.linkedin.com/in/luanmarcelseverino/
+---
+Dúvidas ou sugestões? Conecte-se comigo no LinkedIn: [in/luanmarcelseverino](https://www.linkedin.com/in/luanmarcelseverino/)
